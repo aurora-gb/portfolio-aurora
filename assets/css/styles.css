@@ -1,0 +1,54 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  /* background-color: #32108e; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 40px;
+  font-weight: bolder;
+}
+
+nav {
+  width: 400px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px, 40px;
+    li {
+      padding: 10px;
+      border-radius: 20px;
+
+      &:hover {
+        border: solid 1px;
+        color: #32108e;
+        padding: 10px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  padding: 10px;
+  width: 80px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #32108e;
+    transition: 0.5s;
+    color: #ffffff;
+  }
+}
