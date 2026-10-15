@@ -10,6 +10,25 @@ header {
   height: 50px;
   padding: 0px 40px;
   font-weight: bolder;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #32108e;
+      transition: 0.5s;
+      color: #ffffff;
+    }
+  }
 }
 
 nav {
@@ -34,21 +53,82 @@ nav {
   }
 }
 
-button {
+.hero {
+  /* background-color: aqua; */
+  margin: auto;
+  width: 1300px;
+  height: auto;
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Nunito", sans-serif;
-  border: none;
-  padding: 10px;
-  width: 80px;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: bold;
+  justify-content: space-between;
+}
 
-  &:hover {
-    background-color: #32108e;
-    transition: 0.5s;
-    color: #ffffff;
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    font-size: 92px;
+    font-weight: 800;
+    width: 200px;
+    margin: 20px 0px 20px -6px;
+    font-family: "Archivo", sans-serif;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 200;
+  }
+
+  span {
+    color: #32108e;
+  }
+
+  .hero__text-buttoms {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito", sans-serif;
+      border: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 20px;
+      font-size: 16px;
+      width: 120px;
+
+      &:hover {
+        background-color: #32108e;
+        transition: 0.5s;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.hero__img {
+  /* background-color: blue; */
+
+  .hero__container-img {
+    width: 340px;
+    height: 340px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      height: 350px;
+      border-radius: 50%;
+      width: 400px;
+      object-position: 25% 35%;
+    }
   }
 }
